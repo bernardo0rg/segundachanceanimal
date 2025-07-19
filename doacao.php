@@ -1,4 +1,5 @@
 <?php
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -124,7 +125,22 @@
     <header>
         <h1>Segunda Chance Animal</h1>
         <p>Faça Sua Doação e Ajude a Salvar Vidas!</p>
-    </header>
+    </header> 
+
+    <nav style="background-color: #e4adcc; padding: 10px 0; text-align: center;">
+        <a href="index.html" style="color: #443f3f; text-decoration: none; margin: 0 15px; font-weight: bold;">Início</a>
+        <a href="sobre.html" style="color: #443f3f; text-decoration: none; margin: 0 15px; font-weight: bold;">Sobre Nós</a>
+        <a href="animais.html" style="color: #443f3f; text-decoration: none; margin: 0 15px; font-weight: bold;">Animais para Adoção</a>
+        <a href="como-ajudar.html" style="color: #443f3f; text-decoration: none; margin: 0 15px; font-weight: bold;">Como Ajudar</a>
+        <a href="parceiros.html" style="color: #443f3f; text-decoration: none; margin: 0 15px; font-weight: bold;">Parceiros</a>
+        <a href="contato.html" style="color: #443f3f; text-decoration: none; margin: 0 15px; font-weight: bold;">Contato</a>
+    </nav>
+    <div class="form-container">
+        </div>
+
+    <footer>
+        </footer>
+</body>
 
     <div class="form-container">
         <h2 class="section-title" style="color: #e4adcc;">Sua Contribuição Faz a Diferença!</h2>

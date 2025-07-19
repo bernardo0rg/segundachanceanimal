@@ -1,5 +1,5 @@
 <?php
-//start_session()
+//start_session();
 ?>
 
 <!DOCTYPE html>
@@ -10,11 +10,28 @@
     <title>Segunda Chance Animal - Uma Nova Esperança</title>
     <style>
         body {
+            position: relative;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5ef; /* Cor de fundo principal */
+            /* background-color: #f5f5ef; */
             color: #443f3f; /* Cor do texto principal */
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url(img/fundo.jpg);
+            /* background-size: cover;
+            background-repeat: no-repeat; */
+            background-position: center center;
+            /* filter: grayscale(80%);
+            filter: blur(3px);  */
+            opacity: 0.1;
         }
         header {
             background-color: #8fbfae; /* Cor do cabeçalho */
@@ -117,12 +134,19 @@
         <h1>Segunda Chance Animal</h1>
         <p>Uma nova esperança para quem mais precisa</p>
     </header>
-
-    <nav>
-        <a href="#sobre">Sobre Nós</a>
-        <a href="#adocao">Para Adoção</a>
-        <a href="#contato">Contato</a>
-    </nav>
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="animais.html">Animais para Adoção</a>
+    <a href="como-ajudar.html">Como Ajudar</a>
+    <a href="parceiros.html">Parceiros</a>
+    <a href="contato.html">Contato</a>
+    <a href="administracao.php">administração</a>
+    <a href="loginvoluntario.php">login voluntários</a>
+    <a href="loginusuario.php">login usuario</a>
+    <a href="cadastrar.php">cadastro</a>
+    <a href="cadastraranimais.php">cadastrar pets</a>
+</nav>
 
     <div class="container" id="sobre">
         <h2 class="section-title">Nossa Missão</h2>
@@ -134,8 +158,8 @@
         <h2 class="section-title">Animais para Adoção</h2>
         <div class="gallery">
             <div class="animal-card">
-                <img src="https://via.placeholder.com/300x200?text=Animal+1" alt="Nome do Animal 1">
-                <h3>Nome do Animal 1</h3>
+                <img src="img/imgcao.png" alt="Caramelo">
+                <h3>Jorge</h3>
                 <p><strong>Espécie:</strong> Cachorro</p>
                 <p><strong>Raça:</strong> Vira-lata</p>
                 <p><strong>Idade:</strong> 2 anos</p>
@@ -144,8 +168,8 @@
             </div>
 
             <div class="animal-card">
-                <img src="https://via.placeholder.com/300x200?text=Animal+2" alt="Nome do Animal 2">
-                <h3>Nome do Animal 2</h3>
+                <img src="img/imggatosiamesvesgo.png" alt="Bruno">
+                <h3>Bruno</h3>
                 <p><strong>Espécie:</strong> Gato</p>
                 <p><strong>Raça:</strong> Siamês</p>
                 <p><strong>Idade:</strong> 1 ano</p>
@@ -154,8 +178,8 @@
             </div>
 
             <div class="animal-card">
-                <img src="https://via.placeholder.com/300x200?text=Animal+3" alt="Nome do Animal 3">
-                <h3>Nome do Animal 3</h3>
+                <img src="img/imgcaolabradorfilhote.png" alt="Dioginis">
+                <h3>Dioginis</h3>
                 <p><strong>Espécie:</strong> Cachorro</p>
                 <p><strong>Raça:</strong> Labrador</p>
                 <p><strong>Idade:</strong> 4 meses</p>
@@ -167,10 +191,10 @@
 
     <div class="container buttons-section">
         <h2 class="section-title">Como Você Pode Ajudar</h2>
-        <a href="#" class="btn">Doar Agora</a>
-        <a href="#" class="btn">Adotar um Animal</a>
-        <a href="#" class="btn">Ser Voluntário</a>
-        <a href="#" class="btn">Inscrever-se</a>
+       <a href="doacao.php" class="btn">Doar Agora</a>
+        <a href="adocao.php" class="btn">Adotar um Animal</a>
+        <a href="voluntarios.php" class="btn">Voluntário</a>
+        <a href="formulariouser.php" class="btn">Inscrever-se</a>
     </div>
 
     <footer id="contato">
